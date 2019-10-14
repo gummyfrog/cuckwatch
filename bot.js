@@ -8,10 +8,6 @@ class CuckWatch {
 		this.stream;
 
 		setInterval(function() {
-			this.update();
-		}.bind(this), 10 * 1000);
-
-		setInterval(function() {
 			this.startStream(); 
 		}.bind(this) , 60 * 60 * 1000);
 
@@ -87,5 +83,3 @@ class CuckWatch {
 
 var cuckWatch = new CuckWatch();
 cuckWatch.startStream();
-
-//0000000x0000
